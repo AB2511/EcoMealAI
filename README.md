@@ -34,7 +34,7 @@ Kiro’s AI-driven approach let us focus on user experience and sustainability l
 
 ## 🎥 Demo Video
 
-👉 [Insert YouTube/Vimeo/Facebook Video Link Here]
+👉 [Video Link Here]
 
 ---
 
@@ -74,4 +74,5 @@ EcoMealAI/
 
 **Made with 🌱 during the Hackathon — powered by Kiro.**
 
-**License**: MIT (see [LICENSE](LICENSE))
+**License**: MIT (see [LICENSE](https://github.com/AB2511/EcoMealAI/blob/main/LICENSE))
+
