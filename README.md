@@ -62,6 +62,7 @@ EcoMealAI/
 
 ## 📝 Submission Notes
 
+* **Live Demo**: Try EcoMealAI at [https://ecomealai.streamlit.app/](https://ecomealai.streamlit.app/)
 * **Run Instructions**:
   ```bash
   pip install -r requirements.txt
@@ -75,4 +76,3 @@ EcoMealAI/
 **Made with 🌱 during the Hackathon — powered by Kiro.**
 
 **License**: MIT (see [LICENSE](https://github.com/AB2511/EcoMealAI/blob/main/LICENSE))
-
