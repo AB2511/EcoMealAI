@@ -1,0 +1,848 @@
+{
+  "favorites": {
+    "name": "favorites",
+    "description": "Your favorite recipes",
+    "recipe_ids": [
+      "recipe_1",
+      "recipe_3"
+    ],
+    "created_date": "2025-08-16T13:18:16.262858",
+    "tags": [
+      "favorites"
+    ],
+    "is_default": false
+  },
+  "quick_meals": {
+    "name": "quick_meals",
+    "description": "Quick and easy meals under 30 minutes",
+    "recipe_ids": [],
+    "created_date": "2025-08-16T13:18:16.264710",
+    "tags": [
+      "quick",
+      "easy"
+    ],
+    "is_default": false
+  },
+  "healthy": {
+    "name": "healthy",
+    "description": "Healthy and nutritious recipes",
+    "recipe_ids": [],
+    "created_date": "2025-08-16T13:18:16.265417",
+    "tags": [
+      "healthy",
+      "nutritious"
+    ],
+    "is_default": false
+  },
+  "low_carbon": {
+    "name": "low_carbon",
+    "description": "Environmentally friendly low-carbon recipes",
+    "recipe_ids": [],
+    "created_date": "2025-08-16T13:18:16.266132",
+    "tags": [
+      "sustainable",
+      "eco-friendly"
+    ],
+    "is_default": false
+  },
+  "collection_0": {
+    "name": "collection_0",
+    "description": "Description for collection_0",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.948499",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_1": {
+    "name": "collection_1",
+    "description": "Description for collection_1",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.949691",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_2": {
+    "name": "collection_2",
+    "description": "Description for collection_2",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.950396",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_3": {
+    "name": "collection_3",
+    "description": "Description for collection_3",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.951148",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_4": {
+    "name": "collection_4",
+    "description": "Description for collection_4",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.951794",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_5": {
+    "name": "collection_5",
+    "description": "Description for collection_5",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.953238",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_6": {
+    "name": "collection_6",
+    "description": "Description for collection_6",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.955597",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_7": {
+    "name": "collection_7",
+    "description": "Description for collection_7",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.956852",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_8": {
+    "name": "collection_8",
+    "description": "Description for collection_8",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.958165",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_9": {
+    "name": "collection_9",
+    "description": "Description for collection_9",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.959257",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_10": {
+    "name": "collection_10",
+    "description": "Description for collection_10",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.959937",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_11": {
+    "name": "collection_11",
+    "description": "Description for collection_11",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.960605",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_12": {
+    "name": "collection_12",
+    "description": "Description for collection_12",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.961233",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_13": {
+    "name": "collection_13",
+    "description": "Description for collection_13",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.963249",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_14": {
+    "name": "collection_14",
+    "description": "Description for collection_14",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.965278",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_15": {
+    "name": "collection_15",
+    "description": "Description for collection_15",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.966494",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_16": {
+    "name": "collection_16",
+    "description": "Description for collection_16",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.967460",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_17": {
+    "name": "collection_17",
+    "description": "Description for collection_17",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.968536",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_18": {
+    "name": "collection_18",
+    "description": "Description for collection_18",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.970813",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_19": {
+    "name": "collection_19",
+    "description": "Description for collection_19",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.973130",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_20": {
+    "name": "collection_20",
+    "description": "Description for collection_20",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.975422",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_21": {
+    "name": "collection_21",
+    "description": "Description for collection_21",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.976569",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_22": {
+    "name": "collection_22",
+    "description": "Description for collection_22",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.977545",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_23": {
+    "name": "collection_23",
+    "description": "Description for collection_23",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.978492",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_24": {
+    "name": "collection_24",
+    "description": "Description for collection_24",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.980879",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_25": {
+    "name": "collection_25",
+    "description": "Description for collection_25",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.982854",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_26": {
+    "name": "collection_26",
+    "description": "Description for collection_26",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.984729",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_27": {
+    "name": "collection_27",
+    "description": "Description for collection_27",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.987208",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_28": {
+    "name": "collection_28",
+    "description": "Description for collection_28",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.989134",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_29": {
+    "name": "collection_29",
+    "description": "Description for collection_29",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.990095",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_30": {
+    "name": "collection_30",
+    "description": "Description for collection_30",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.991027",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_31": {
+    "name": "collection_31",
+    "description": "Description for collection_31",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.991911",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_32": {
+    "name": "collection_32",
+    "description": "Description for collection_32",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.992847",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_33": {
+    "name": "collection_33",
+    "description": "Description for collection_33",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.993884",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_34": {
+    "name": "collection_34",
+    "description": "Description for collection_34",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.994852",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_35": {
+    "name": "collection_35",
+    "description": "Description for collection_35",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.997034",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_36": {
+    "name": "collection_36",
+    "description": "Description for collection_36",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:34.998728",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_37": {
+    "name": "collection_37",
+    "description": "Description for collection_37",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.000134",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_38": {
+    "name": "collection_38",
+    "description": "Description for collection_38",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.002766",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_39": {
+    "name": "collection_39",
+    "description": "Description for collection_39",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.005571",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_40": {
+    "name": "collection_40",
+    "description": "Description for collection_40",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.007092",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_41": {
+    "name": "collection_41",
+    "description": "Description for collection_41",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.008679",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_42": {
+    "name": "collection_42",
+    "description": "Description for collection_42",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.009815",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_43": {
+    "name": "collection_43",
+    "description": "Description for collection_43",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.011118",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_44": {
+    "name": "collection_44",
+    "description": "Description for collection_44",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.013364",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_45": {
+    "name": "collection_45",
+    "description": "Description for collection_45",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.016598",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_46": {
+    "name": "collection_46",
+    "description": "Description for collection_46",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.018835",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_47": {
+    "name": "collection_47",
+    "description": "Description for collection_47",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.021069",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_48": {
+    "name": "collection_48",
+    "description": "Description for collection_48",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.022304",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_49": {
+    "name": "collection_49",
+    "description": "Description for collection_49",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.023453",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_50": {
+    "name": "collection_50",
+    "description": "Description for collection_50",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.024673",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_51": {
+    "name": "collection_51",
+    "description": "Description for collection_51",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.026456",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_52": {
+    "name": "collection_52",
+    "description": "Description for collection_52",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.027866",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_53": {
+    "name": "collection_53",
+    "description": "Description for collection_53",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.030396",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_54": {
+    "name": "collection_54",
+    "description": "Description for collection_54",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.032880",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_55": {
+    "name": "collection_55",
+    "description": "Description for collection_55",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.034804",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_56": {
+    "name": "collection_56",
+    "description": "Description for collection_56",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.036219",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_57": {
+    "name": "collection_57",
+    "description": "Description for collection_57",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.037588",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_58": {
+    "name": "collection_58",
+    "description": "Description for collection_58",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.038960",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_59": {
+    "name": "collection_59",
+    "description": "Description for collection_59",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.040285",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_60": {
+    "name": "collection_60",
+    "description": "Description for collection_60",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.041799",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_61": {
+    "name": "collection_61",
+    "description": "Description for collection_61",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.043138",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_62": {
+    "name": "collection_62",
+    "description": "Description for collection_62",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.044434",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_63": {
+    "name": "collection_63",
+    "description": "Description for collection_63",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.046225",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_64": {
+    "name": "collection_64",
+    "description": "Description for collection_64",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.049524",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_65": {
+    "name": "collection_65",
+    "description": "Description for collection_65",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.051314",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_66": {
+    "name": "collection_66",
+    "description": "Description for collection_66",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.052857",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_67": {
+    "name": "collection_67",
+    "description": "Description for collection_67",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.054388",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_68": {
+    "name": "collection_68",
+    "description": "Description for collection_68",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.055815",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_69": {
+    "name": "collection_69",
+    "description": "Description for collection_69",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.057188",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_70": {
+    "name": "collection_70",
+    "description": "Description for collection_70",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.058642",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_71": {
+    "name": "collection_71",
+    "description": "Description for collection_71",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.060134",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_72": {
+    "name": "collection_72",
+    "description": "Description for collection_72",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.061849",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_73": {
+    "name": "collection_73",
+    "description": "Description for collection_73",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.065233",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_74": {
+    "name": "collection_74",
+    "description": "Description for collection_74",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.067013",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_75": {
+    "name": "collection_75",
+    "description": "Description for collection_75",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.068581",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_76": {
+    "name": "collection_76",
+    "description": "Description for collection_76",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.070401",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_77": {
+    "name": "collection_77",
+    "description": "Description for collection_77",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.072007",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_78": {
+    "name": "collection_78",
+    "description": "Description for collection_78",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.073573",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_79": {
+    "name": "collection_79",
+    "description": "Description for collection_79",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.075076",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_80": {
+    "name": "collection_80",
+    "description": "Description for collection_80",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.076639",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_81": {
+    "name": "collection_81",
+    "description": "Description for collection_81",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.078176",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_82": {
+    "name": "collection_82",
+    "description": "Description for collection_82",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.081104",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_83": {
+    "name": "collection_83",
+    "description": "Description for collection_83",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.083103",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_84": {
+    "name": "collection_84",
+    "description": "Description for collection_84",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.084924",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_85": {
+    "name": "collection_85",
+    "description": "Description for collection_85",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.086599",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_86": {
+    "name": "collection_86",
+    "description": "Description for collection_86",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.088193",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_87": {
+    "name": "collection_87",
+    "description": "Description for collection_87",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.089935",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_88": {
+    "name": "collection_88",
+    "description": "Description for collection_88",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.091612",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_89": {
+    "name": "collection_89",
+    "description": "Description for collection_89",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.095386",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_90": {
+    "name": "collection_90",
+    "description": "Description for collection_90",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.098207",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_91": {
+    "name": "collection_91",
+    "description": "Description for collection_91",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.100081",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_92": {
+    "name": "collection_92",
+    "description": "Description for collection_92",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.101855",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_93": {
+    "name": "collection_93",
+    "description": "Description for collection_93",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.103673",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_94": {
+    "name": "collection_94",
+    "description": "Description for collection_94",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.105325",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_95": {
+    "name": "collection_95",
+    "description": "Description for collection_95",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.106972",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_96": {
+    "name": "collection_96",
+    "description": "Description for collection_96",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.108636",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_97": {
+    "name": "collection_97",
+    "description": "Description for collection_97",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.110353",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_98": {
+    "name": "collection_98",
+    "description": "Description for collection_98",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.112787",
+    "tags": [],
+    "is_default": false
+  },
+  "collection_99": {
+    "name": "collection_99",
+    "description": "Description for collection_99",
+    "recipe_ids": [],
+    "created_date": "2025-08-23T09:21:35.115519",
+    "tags": [],
+    "is_default": false
+  }
+}

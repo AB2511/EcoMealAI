@@ -1,0 +1,94 @@
+{
+  "ingredients": {
+    "proteins": {
+      "beef": 27.0,
+      "lamb": 24.5,
+      "pork": 7.6,
+      "chicken": 6.1,
+      "turkey": 5.8,
+      "fish": 5.4,
+      "salmon": 6.0,
+      "tuna": 5.2,
+      "shrimp": 7.0,
+      "eggs": 4.2,
+      "tofu": 2.0,
+      "tempeh": 1.8,
+      "beans": 0.4,
+      "lentils": 0.9,
+      "chickpeas": 0.5,
+      "nuts": 0.3,
+      "almonds": 0.7,
+      "walnuts": 0.4
+    },
+    "dairy": {
+      "cheese": 13.5,
+      "cheddar_cheese": 15.2,
+      "mozzarella": 12.8,
+      "milk": 3.2,
+      "yogurt": 2.8,
+      "butter": 23.8,
+      "cream": 4.5
+    },
+    "grains": {
+      "rice": 2.7,
+      "brown_rice": 2.9,
+      "wheat": 1.4,
+      "bread": 1.3,
+      "pasta": 1.1,
+      "quinoa": 1.8,
+      "oats": 1.6,
+      "barley": 1.2
+    },
+    "vegetables": {
+      "potatoes": 0.3,
+      "sweet_potatoes": 0.4,
+      "tomatoes": 1.1,
+      "onions": 0.3,
+      "carrots": 0.4,
+      "broccoli": 0.4,
+      "spinach": 0.4,
+      "kale": 0.3,
+      "bell_peppers": 0.7,
+      "zucchini": 0.3,
+      "cucumber": 0.2,
+      "lettuce": 0.2,
+      "cabbage": 0.3,
+      "cauliflower": 0.4,
+      "mushrooms": 0.5,
+      "garlic": 0.3,
+      "ginger": 0.3
+    },
+    "fruits": {
+      "avocado": 0.9,
+      "banana": 0.7,
+      "apple": 0.4,
+      "orange": 0.4,
+      "berries": 0.5,
+      "strawberries": 0.6,
+      "blueberries": 0.8,
+      "lemon": 0.3,
+      "lime": 0.3
+    },
+    "oils_fats": {
+      "olive_oil": 5.3,
+      "coconut_oil": 6.2,
+      "vegetable_oil": 4.8,
+      "canola_oil": 4.2
+    },
+    "seasonings": {
+      "sugar": 1.8,
+      "honey": 2.1,
+      "salt": 0.1,
+      "herbs": 0.2,
+      "spices": 0.3
+    }
+  },
+  "sustainability_tips": [
+    "Choose plant-based proteins to reduce carbon footprint",
+    "Buy local and seasonal ingredients when possible",
+    "Minimize food waste by planning portions carefully",
+    "Use whole grains instead of refined grains",
+    "Reduce packaging by buying in bulk",
+    "Choose organic when it matters most for the environment"
+  ]
+}

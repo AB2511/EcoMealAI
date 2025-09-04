@@ -1,0 +1,86 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+*.env
+*.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+*.cache
+
+# Test files
+tests/
+test_*.py
+*_test.py
+spec/
+*.spec
+*.test
+test-data/
+test_output/
+test-results/
+pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Project-specific
+saved_plans/
+*.bak
+*.tmp
+*.db
