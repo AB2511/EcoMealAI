@@ -18,10 +18,15 @@ import random
 import uuid
 import requests
 import datetime
+import logging
 from collections import defaultdict
 
 import streamlit as st
 import pandas as pd
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 # ---------------------------
 # Config & API keys
@@ -103,27 +108,12 @@ if "planner_diet" not in st.session_state:
     st.session_state["planner_diet"] = "Any"
 
 if "uid" not in st.session_state:
-    # Handle both old and new Streamlit versions
-    if hasattr(st, "query_params"):
-        # Newer versions (>=1.32)
-        query_params = st.query_params
-        query_uid = query_params.get("uid")
-    else:
-        # Older versions (<1.32, e.g. 1.28.1 on Cloud)
-        query_params = st.experimental_get_query_params()
-        query_uid = query_params.get("uid", [None])[0]
-
+    query_uid = st.query_params.get("uid")
     if query_uid:
         st.session_state["uid"] = query_uid
     else:
         st.session_state["uid"] = str(uuid.uuid4())[:8]
-
-        # Write back into URL
-        if hasattr(st, "query_params"):
-            st.query_params["uid"] = st.session_state["uid"]
-        else:
-            st.experimental_set_query_params(uid=st.session_state["uid"])
-
+        st.query_params["uid"] = st.session_state["uid"]
 USER_UID = st.session_state["uid"]
 
 # ---------------------------
@@ -133,47 +123,52 @@ def mealdb_search_by_name(query: str):
     try:
         url = f"{MEALDB_ROOT}/search.php"
         r = requests.get(url, params={"s": query}, timeout=8)
-        if r.status_code == 200:
-            data = r.json()
-            return data.get("meals") or []
-    except Exception:
-        pass
-    return []
+        r.raise_for_status()
+        data = r.json()
+        meals = data.get("meals") or []
+        logger.debug(f"mealdb_search_by_name('{query}'): {len(meals)} meals found")
+        return meals
+    except Exception as e:
+        logger.error(f"mealdb_search_by_name('{query}') failed: {e}")
+        return []
 
 def mealdb_lookup_id(meal_id: str):
     try:
         url = f"{MEALDB_ROOT}/lookup.php"
         r = requests.get(url, params={"i": meal_id}, timeout=8)
-        if r.status_code == 200:
-            data = r.json()
-            meals = data.get("meals")
-            if meals:
-                return meals[0]
-    except Exception:
-        pass
-    return None
+        r.raise_for_status()
+        data = r.json()
+        meals = data.get("meals")
+        if meals:
+            logger.debug(f"mealdb_lookup_id('{meal_id}'): Found meal {meals[0].get('strMeal')}")
+            return meals[0]
+        logger.debug(f"mealdb_lookup_id('{meal_id}'): No meal found")
+        return None
+    except Exception as e:
+        logger.error(f"mealdb_lookup_id('{meal_id}') failed: {e}")
+        return None
 
 def mealdb_list_categories():
     try:
         url = f"{MEALDB_ROOT}/list.php"
         r = requests.get(url, params={"c": "list"}, timeout=8)
-        if r.status_code == 200:
-            data = r.json()
-            return [c["strCategory"] for c in (data.get("meals") or [])]
-    except Exception:
-        pass
-    return []
+        r.raise_for_status()
+        data = r.json()
+        return [c["strCategory"] for c in (data.get("meals") or [])]
+    except Exception as e:
+        logger.error(f"mealdb_list_categories failed: {e}")
+        return []
 
 def mealdb_filter_by_category(cat: str):
     try:
         url = f"{MEALDB_ROOT}/filter.php"
         r = requests.get(url, params={"c": cat}, timeout=8)
-        if r.status_code == 200:
-            data = r.json()
-            return data.get("meals") or []
-    except Exception:
-        pass
-    return []
+        r.raise_for_status()
+        data = r.json()
+        return data.get("meals") or []
+    except Exception as e:
+        logger.error(f"mealdb_filter_by_category('{cat}') failed: {e}")
+        return []
 
 def parse_mealdb_details(meal_obj):
     if not meal_obj:
@@ -181,7 +176,7 @@ def parse_mealdb_details(meal_obj):
     try:
         rid = meal_obj.get("idMeal")
         title = meal_obj.get("strMeal")
-        image = meal_obj.get("strMealThumb")
+        image = meal_obj.get("strMealThumb")  # Use strMealThumb consistently
         instructions = meal_obj.get("strInstructions") or ""
         category = meal_obj.get("strCategory") or "Other"
         area = meal_obj.get("strArea") or "Unknown"
@@ -196,7 +191,7 @@ def parse_mealdb_details(meal_obj):
                     "name": name.strip(),
                     "amount": (measure or "").strip()
                 })
-        return {
+        parsed = {
             "id": str(rid),
             "title": title,
             "image": image,
@@ -205,7 +200,10 @@ def parse_mealdb_details(meal_obj):
             "area": area,
             "ingredients": ingredients
         }
-    except Exception:
+        logger.debug(f"parse_mealdb_details: Parsed meal {title}, image: {image}")
+        return parsed
+    except Exception as e:
+        logger.error(f"parse_mealdb_details failed: {e}")
         return None
 
 # ---------------------------
@@ -469,8 +467,16 @@ def recipe_search_ui():
             if not parsed:
                 continue
             with st.expander(parsed.get("title")):
-                if parsed.get("image"):
-                    st.image(parsed.get("image"), use_container_width=False, width=250)
+                image_url = parsed.get("image")
+                if image_url and isinstance(image_url, str) and image_url.startswith("http"):
+                    try:
+                        st.image(image_url, use_container_width=False, width=250)
+                    except Exception as e:
+                        st.write("Image not available for this recipe.")
+                        logger.error(f"Failed to load image {image_url}: {e}")
+                else:
+                    st.write("Image not available for this recipe.")
+                    logger.debug(f"No valid image for recipe {parsed.get('title')}: {image_url}")
                 st.markdown(f"**Cuisine / Area:** {parsed.get('area')}")
                 st.markdown("**Ingredients:**")
                 for ing in parsed.get("ingredients", []):
@@ -545,8 +551,16 @@ def weekly_planner_ui():
                     if recipe:
                         title = recipe.get("title", "Unknown")
                         st.markdown(f"**{meal_type} — {title}**")
-                        if recipe.get("image"):
-                            st.image(recipe.get("image"), use_container_width=False, width=220)
+                        image_url = recipe.get("image")
+                        if image_url and isinstance(image_url, str) and image_url.startswith("http"):
+                            try:
+                                st.image(image_url, use_container_width=False, width=220)
+                            except Exception as e:
+                                st.write("Image not available for this recipe.")
+                                logger.error(f"Failed to load image {image_url}: {e}")
+                        else:
+                            st.write("Image not available for this recipe.")
+                            logger.debug(f"No valid image for recipe {title}: {image_url}")
                         st.markdown("Ingredients:")
                         for ing in recipe.get("ingredients", []):
                             st.write(f"- {ing.get('name')} — {ing.get('amount')}")
