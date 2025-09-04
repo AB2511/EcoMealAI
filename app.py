@@ -103,7 +103,9 @@ if "planner_diet" not in st.session_state:
     st.session_state["planner_diet"] = "Any"
 
 if "uid" not in st.session_state:
-    query_uid = st.query_params.get("uid")
+    query_params = st.query_params
+    query_uid = query_params.get("uid")
+
     if query_uid:
         st.session_state["uid"] = query_uid
     else:
