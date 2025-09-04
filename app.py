@@ -103,14 +103,27 @@ if "planner_diet" not in st.session_state:
     st.session_state["planner_diet"] = "Any"
 
 if "uid" not in st.session_state:
-    query_params = st.query_params
-    query_uid = query_params.get("uid")
+    # Handle both old and new Streamlit versions
+    if hasattr(st, "query_params"):
+        # Newer versions (>=1.32)
+        query_params = st.query_params
+        query_uid = query_params.get("uid")
+    else:
+        # Older versions (<1.32, e.g. 1.28.1 on Cloud)
+        query_params = st.experimental_get_query_params()
+        query_uid = query_params.get("uid", [None])[0]
 
     if query_uid:
         st.session_state["uid"] = query_uid
     else:
         st.session_state["uid"] = str(uuid.uuid4())[:8]
-        st.query_params["uid"] = st.session_state["uid"]
+
+        # Write back into URL
+        if hasattr(st, "query_params"):
+            st.query_params["uid"] = st.session_state["uid"]
+        else:
+            st.experimental_set_query_params(uid=st.session_state["uid"])
+
 USER_UID = st.session_state["uid"]
 
 # ---------------------------
