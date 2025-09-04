@@ -108,12 +108,24 @@ if "planner_diet" not in st.session_state:
     st.session_state["planner_diet"] = "Any"
 
 if "uid" not in st.session_state:
-    query_uid = st.query_params.get("uid")
+    try:
+        # Try accessing query_params directly (Streamlit >= 1.11.0)
+        query_uid = st.query_params.get("uid") if hasattr(st, "query_params") else None
+        logger.debug(f"Query UID from st.query_params: {query_uid}")
+    except AttributeError:
+        # Fallback for older Streamlit versions
+        query_uid = None
+        logger.error("st.query_params not available, falling back to no UID")
     if query_uid:
         st.session_state["uid"] = query_uid
     else:
         st.session_state["uid"] = str(uuid.uuid4())[:8]
-        st.query_params["uid"] = st.session_state["uid"]
+        try:
+            if hasattr(st, "query_params"):
+                st.query_params["uid"] = st.session_state["uid"]
+                logger.debug(f"Set query_params uid: {st.session_state['uid']}")
+        except AttributeError:
+            logger.error("Failed to set st.query_params, continuing without setting")
 USER_UID = st.session_state["uid"]
 
 # ---------------------------
