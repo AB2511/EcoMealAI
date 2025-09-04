@@ -34,7 +34,7 @@ Kiro’s AI-driven approach let us focus on user experience and sustainability l
 
 ## 🎥 Demo Video
 
-👉 [Video Link Here]
+👉 [Video](https://youtu.be/4V7pPMEnuRo)
 
 ---
 
